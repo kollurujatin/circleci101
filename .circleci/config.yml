@@ -5,9 +5,6 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprint:
-            - "f0:8f:76:63:9b:b6:56:09:3f:57:b2:aa:ad:6f:3a:16"
       - run: mkdir -p my_workspace
       - run: echo "Hello World" > my_workspace/echo-output
       - persist_to_workspace:
