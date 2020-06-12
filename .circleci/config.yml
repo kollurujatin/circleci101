@@ -28,7 +28,7 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - attach_workspace:
-          # Must be absolute path or relative path from working_directory
+          
           at: my_workspace
 
       - run: |
